@@ -1,6 +1,8 @@
 #include "funciones.h"
 
-double calcula_pi(unsigned long N){
+// Se aproxima el número Pi calculando la longitud de
+// una circunferencia
+double pi_circunferencia(unsigned long N){
 	double paso = 1/(double) N, y1 = 1, y2, d = 0;
 	for (double x2 = paso; x2 <= 1; x2 += paso){
 		y2 = sqrt(1-x2*x2);
@@ -10,6 +12,7 @@ double calcula_pi(unsigned long N){
 	return 2*d;
 }
 
+// Se aproxima el número Pi calculando el área de un círculo
 long double pi_area(unsigned long N){
 	long double delta_x = 1/(long double)N, y1 = 0, area = 0, y2;
 	for (long double x2 = delta_x; x2 <= 1; x2 += delta_x){
