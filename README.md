@@ -1,2 +1,2 @@
 # ejemplo
-Es un ejemplo para aprendeer como funciona 
+Es un ejemplo para aprender como funciona 
